@@ -43,7 +43,7 @@ def load_retriever():
         
     loader = DirectoryLoader("./knowledge_base/", glob="**/*.md", loader_cls=TextLoader)
     documents = loader.load()
-    
+
     text_splitter = CharacterTextSplitter(chunk_size=400, chunk_overlap=50)
     docs = text_splitter.split_documents(documents)
     
