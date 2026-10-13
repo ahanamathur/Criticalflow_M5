@@ -1,0 +1,62 @@
+MOCK_INCIDENTS = [
+    {
+        "incident_id": "INC-10081",
+        "incident_type": "ABEND",
+        "completion_status": "ABEND",
+        "return_code": None,
+        "abend_code": "S0C4",
+        "primary_message_id": "IEF450I",
+        "cpu_utilization_pct": 24.5,
+        "error_rate_pct": 12.0,
+        "recent_deployment_flag": True,
+        "anomaly_score": 0.95,
+        "risk_score": 0.98,
+        "severity": "HIGH",
+        "description": "Job PAYROLL01 aborted with system completion code S0C4 during module PAYCALC execution following a recent deployment."
+    },
+    {
+        "incident_id": "INC-10082",
+        "incident_type": "CPU_SPIKE",
+        "completion_status": "CC",
+        "return_code": 0,
+        "abend_code": None,
+        "primary_message_id": "IEF142I",
+        "cpu_utilization_pct": 96.5,
+        "error_rate_pct": 45.5,
+        "recent_deployment_flag": False,
+        "anomaly_score": 0.94,
+        "risk_score": 0.92,
+        "severity": "HIGH",
+        "description": "High CPU utilization detected during peak batch processing window with heavy concurrent job loads."
+    },
+    {
+        "incident_id": "INC-10083",
+        "incident_type": "JOB_FAILURE",
+        "completion_status": "CC",
+        "return_code": 12,
+        "abend_code": None,
+        "primary_message_id": "IEF450I",
+        "cpu_utilization_pct": 42.1,
+        "error_rate_pct": 18.0,
+        "recent_deployment_flag": True,
+        "anomaly_score": 0.89,
+        "risk_score": 0.90,
+        "severity": "MEDIUM",
+        "description": "Job BATCH02 terminated with return code 12 due to a missing input dataset dependency."
+    },
+    {
+        "incident_id": "INC-10084",
+        "incident_type": "MEMORY_PRESSURE",
+        "completion_status": "CC",
+        "return_code": 8,
+        "abend_code": None,
+        "primary_message_id": "IEF142I",
+        "cpu_utilization_pct": 68.4,
+        "error_rate_pct": 22.1,
+        "recent_deployment_flag": False,
+        "anomaly_score": 0.91,
+        "risk_score": 0.93,
+        "severity": "HIGH",
+        "description": "Memory pressure alert triggered during large sort/merge operation, causing extended paging rates."
+    }
+]
